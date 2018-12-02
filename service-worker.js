@@ -5,14 +5,15 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/`,
-        '/nxy.css'
-        '/nxy.png'
-        '/nxy.svg'
-        '/stops.json'
-        '/routes.json'
-        '/index.html'
-        '/routes.html'
-        '/jquery.js'
+        '/nxy.css',
+        '/nxy.png',
+        '/nxy.svg',
+        '/stops.json',
+        '/routes.json',
+        '/index.html',
+        '/routes.html',
+        '/jquery.js',
+        '/main.min.js',
         `/pwacompat.min.js`
       ])
           .then(() => self.skipWaiting());
