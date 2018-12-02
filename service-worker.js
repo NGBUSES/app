@@ -1,20 +1,21 @@
 const version = "0.1.2";
 const cacheName = `bus-${version}`;
 self.addEventListener('install', e => {
+  const timeStamp = Date.now();
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        '/',
-        '/nxy.css',
-        '/nxy.png',
-        '/nxy.svg',
-        '/stops.json',
-        '/routes.json',
-        '/index.html',
-        '/routes.html',
-        '/jquery.js',
-        '/main.min.js',
-        '/pwacompat.min.js'
+        `/`,
+        `/nxy.css`,
+        `/nxy.png`,
+        `/nxy.svg`,
+        `/stops.json`,
+        `/routes.json`,
+        `/index.html`,
+        `/routes.html`,
+        `/jquery.js`,
+        `/main.min.js`,
+        `/pwacompat.min.js`
       ])
           .then(() => self.skipWaiting());
     })
