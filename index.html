@@ -317,11 +317,17 @@ Designed and built by ngxingyu &copy;
 </div>
 </div>
 </footer>
-<script>  if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('/service-worker.js')
-           .then(function() { console.log("Service Worker Registered"); });
-}</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+</script>
 </body>
 
 </html>
