@@ -1,4 +1,5 @@
 'use strict';
+importScripts('/async-waituntil.js');
 
 const version = 'v0.041::';
 const staticCacheName = version + 'static';
