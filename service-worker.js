@@ -13,8 +13,7 @@ self.addEventListener('install', e => {
         '/index.html'
         '/routes.html'
         '/jquery.js'
-        `/scripts/pwacompat.min.js`,
-        `/sounds/airhorn.mp3`
+        `/pwacompat.min.js`
       ])
           .then(() => self.skipWaiting());
     })
