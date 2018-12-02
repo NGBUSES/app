@@ -4,7 +4,7 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `/`,
+        '/',
         '/nxy.css',
         '/nxy.png',
         '/nxy.svg',
@@ -14,7 +14,7 @@ self.addEventListener('install', e => {
         '/routes.html',
         '/jquery.js',
         '/main.min.js',
-        `/pwacompat.min.js`
+        '/pwacompat.min.js'
       ])
           .then(() => self.skipWaiting());
     })
