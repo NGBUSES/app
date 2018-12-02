@@ -19,8 +19,7 @@ function updateStaticCache() {
         '/index.html',
         '/routes.html',
         '/jquery.js',
-        '/main.min.js',
-        '/pwacompat.min.js'
+        '/scripts.js',
 ]);
     });
 }
