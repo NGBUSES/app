@@ -1,5 +1,5 @@
-const version = '0.1.1';
-const cacheName = 'bus-${version}';
+const version = "0.1.1";
+const cacheName = `bus-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
