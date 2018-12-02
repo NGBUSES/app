@@ -1,4 +1,3 @@
-'use strict';
 importScripts('/async-waituntil.js');
 
 const version = 'v0.041::';
