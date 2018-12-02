@@ -10,16 +10,16 @@
   {
     "src": "http://ngbuses.github.io/apple-touch-icon-57x57.png",
     "sizes": "57x57",
-  },
+  }
   {
     "src": "http://ngbuses.github.io/favicon.ico",
     "sizes": "16x16 32x32 96x96 128x128 196x196"
   },
   {
-    "src": "http://ngbuses.github.io/nxy.svg",
-  }
+    "src": "http://ngbuses.github.io/nxy.svg"
+  },
   {
-    "src": "http://ngbuses.github.io/mstile-310x310.png",
+    "src": "http://ngbuses.github.io/mstile-310x310.png"
   }
 ]
 
