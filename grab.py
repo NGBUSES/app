@@ -17,9 +17,11 @@ def fetch_all(url):
             results += new_results
     return results
 stops = new_results = requests.get(
-            "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=83139",
+            #"http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=83139",
+            #"http://datamall2.mytransport.sg/ltaodataservice/BusRoutes",
+            #"http://datamall2.mytransport.sg/ltaodataservice/BusStops",
             headers=headers,
             ).json()
-f = open('timing.json','w')
+f = open('stops.json','w')
 f.write('var r='+str(stops))
 f.close()
